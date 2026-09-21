@@ -29,3 +29,6 @@ jobs:
 
       - name: Check Python files
         run: python -m py_compile main.py next.py
+
+      - name: Build Docker image
+        run: docker build -t echomail:ci .
